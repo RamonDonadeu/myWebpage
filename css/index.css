@@ -1,0 +1,152 @@
+/* GLOBAL */
+
+html {
+    font-family: Helvetica, serif;
+}
+
+:root {
+    --color_one: #DD4C4C;
+    --color_two: rgb(57, 62, 70);
+    --color_three: #00ADB5;
+    --white: white;
+}
+
+body {
+    background-color: var(--color_two);
+    color: var(--white);
+    margin: 0 !important;
+    overflow-y: overlay;
+}
+
+h4 {
+    font-weight: lighter;
+    margin: 0;
+}
+
+.sectionContainer {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* HEADER CSS */
+
+header {
+    background-color: var(--color_one);
+    color: var(--white);
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    position: fixed;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-block: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.headerContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+}
+
+.headerElement {
+    font-size: 1.3rem;
+    padding-inline: 1rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.headerContactMe {
+    font-size: 1.3rem;
+    margin-block: auto;
+    padding-inline: 1.2rem;
+    padding-block: 0.3rem;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.headerContactMe:hover {
+    background-color: white;
+    color: var(--color_one)
+}
+
+.headerMargin {
+    padding-top: 4rem;
+}
+
+/* Main Section */
+
+.mainSection {
+    background-color: var(--color_two);
+    height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+
+.especializacion {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.nombre {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.fotoAvatar {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.fotoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20rem;
+    overflow: hidden;
+}
+
+.curriculum {
+    height: 2.3rem;
+    padding-inline: 1rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: var(--color_two);
+    color: white;
+    transition: 0.3s;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.curriculum:hover {
+    height: 2.3rem;
+    padding-inline: 1rem;
+    border-radius: 50px;
+    border: 1px solid var(--color_one);
+    background-color: var(--color_one);
+    color: white;
+}
