@@ -6,30 +6,32 @@
     <link rel="stylesheet" href="./css/mainSection.css" />
     <link rel="stylesheet" href="./css/tecnologies.css" />
     <link rel="stylesheet" href="./css/aboutme.css" />
+    <link rel="stylesheet" href="./css/projects.css">
   </head>
   <body>
     <header>
       <div class="headerContainer">
-        <div class="headerElement">Inicio</div>
-        <div class="headerElement">Sobre Mí</div>
-        <div class="headerElement">Proyectos</div>        
-        <div class="headerElement">Contacto</div>
+        <div class="headerElement"><a href="#main">Inicio</a> </div>
+        <div class="headerElement"><a href="#aboutme">Sobre Mí</a>  </div>
+        <div class="headerElement"><a href="#projects">Proyectos</a> </div>        
+        <div class="headerElement"><a href="#contactme">Contacto</a> </div>
       </div>
     </header>
-    <div class="headerMargin"></div>
-    <section class="sectionContainer mainSection">
+    <div class="mainContent"><section class="sectionContainer mainSection ancor" id="main">
       <div class="infoContainer">
         <div class="especializacion">FRONT END DEVELOPER</div>
         <div class="nombre">Ramon Donadeu Caballero</div>
-        <button class="curriculum" dir="/other">Descarga mi curriculum</button>
+        <a  href="/others/Ramon_Donadeu_ES.pdf" download="Ramon_Donadeu_CV.pdf" target="_blank"> <button class="curriculum">
+          Descarga mi curriculum</button></a>
+       
       </div>
       <div class="fotoAvatar">
         <div class="fotoContainer">
-          <img src="/img/avatar.png" />
+          <img style="height: inherit;" src="/img/me.jpeg" />
         </div>
       </div>
     </section>
-    <section class="aboutme">
+    <section class="aboutme ancor" id="aboutme">
       <div class="sectionContainer">
         <div class="aboutme--content">
           <span class="first--letter">D</span>urante mis dos primeros años trabajando exploré diferentes sectores de programación y encontré mi pasión en el <span>Frontend y la maquetación</span>, aunque he trabajado desarrollando aplicaciones como <span>Full Stack</span>.
@@ -55,8 +57,34 @@
           </div>
       </div>
     </section>
-    ei
-    <section class="projects sectionContainer"></section>
-    <footer>Test</footer>
+    <section class="projects ancor" id="projects">
+      <div class="sectionContainer">
+        <h2>Mis Proyectos</h2>
+        <div class="projectList">
+          <a class="project--item" href="https://ramondonadeu.github.io/frontendMentor">
+            <div class="imgContainer">
+              <img src="./img/frontendmentor-project.png" alt="">            
+              <div class="description">Todos mis ejercicios hechos en Frontend Mentor.<br>Una pagina web que te proporciona diseños web y debes copiarlos lo mejor posible.</div>
+            </div>
+            <div class="title">My FrontendMentor</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer id="contactme" class="ancor">
+      <div class="sectionContainer" >
+        <div class="footer--info">
+          Ramon Donadeu Caballero <br>
+          ramondonadeucaballero@gmail.com<br>
+          +34 650 860 411<br>
+          Tarragona, España<br>
+        </div>
+        <div class="footer--links">
+          <a href="https://github.com/RamonDonadeu" target="_blank"><img src="./img/git-logo.png" alt=""></a>          
+          <a href="https://www.linkedin.com/in/ramon-donadeu/" target="_blank"><img src="./img/linkedin-logo.png" alt=""></a>
+        </div>
+      </div></div>
+    
+    </footer>
   </body>
 </html>
