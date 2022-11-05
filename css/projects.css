@@ -84,12 +84,16 @@
 }
 
 @media (max-width: 950px) {
+  .projects h2 {
+    padding-bottom: 2rem;
+  }
   .projectList {
     flex-direction: column;
   }
   .project--item {
-    width: 80%;
+    width: 60%;
     margin: auto;
+    margin-bottom: 4rem;
   }
   .imgContainer {
     flex-direction: column;

@@ -13,8 +13,15 @@
 
   </head>
   <body>
+    <div class="hideBack" id="disableBack"></div>
     <header>
-      <div class="headerContainer">
+      <div class="mobile--nav" id="js--openNavbar">
+        <img src="./img/icon-menu.svg" alt="Open Menu" />
+      </div>
+      <nav class="headerContainer nav--closed">
+        <div class="mobile--nav" id="js--closeNavbar">
+          <img src="./img/icon-menu-close.svg" alt="Close Menu" />
+        </div>
         <div class="headerElement"><a href="#main">Inicio</a> </div>
         <div class="headerElement"><a href="#aboutme">Sobre Mí</a>  </div>
         <div class="headerElement"><a href="#projects">Proyectos</a> </div>        
@@ -92,4 +99,5 @@
     
     </footer>
   </body>
+  <script src="./scripts/script.js"></script>
 </html>
