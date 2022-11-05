@@ -5,7 +5,7 @@
   justify-content: flex-start;
   flex-direction: column;
   min-height: calc(100vh - 4rem);
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .projects h2 {
   font-size: 5rem;
@@ -49,9 +49,15 @@
   align-items: center;
   border-bottom: 1px solid var(--color_two);
   position: relative;
+  margin: auto;
 }
+
 .project--item img {
-  height: 5rem;
+  height: 100%;
+  box-sizing: border-box;
+  object-fit: contain;
+  padding: 1rem;
+  width: 100%;
 }
 .project--item .title {
   padding: 2rem 0;
@@ -75,4 +81,26 @@
   box-sizing: border-box;
   font-size: 1rem;
   line-height: 1.4rem;
+}
+
+@media (max-width: 950px) {
+  .projectList {
+    flex-direction: column;
+  }
+  .project--item {
+    width: 80%;
+    margin: auto;
+  }
+  .imgContainer {
+    flex-direction: column;
+    justify-content: space-between !important;
+  }
+  .description {
+    position: relative !important;
+    opacity: 1 !important;
+    background-color: var(--white) !important;
+    color: black !important;
+    height: min-content !important;
+    border-top: 1px solid var(--color_two);
+  }
 }
