@@ -197,9 +197,3 @@ footer > div {
 .footer--links a img {
   height: 5rem;
 }
-
-/* Responsive */
-@media (max-width: 750px) {
-  .mainContent {
-  }
-}

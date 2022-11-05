@@ -10,6 +10,9 @@
   justify-content: space-around;
 }
 
+.infoContainer {
+  max-width: 100%;
+}
 .especializacion {
   font-size: 6rem;
   font-weight: bold;
@@ -68,5 +71,30 @@
 @media (max-width: 950px) {
   .mainSection {
     flex-direction: column;
+    padding-block: 2rem;
+  }
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .especializacion {
+    font-size: 3rem;
+    width: min-content;
+  }
+  .nombre {
+    padding-block: 2rem;
+    text-align: center;
+  }
+  .infoContainer a {
+    margin-top: 3rem;
+  }
+  .fotoAvatar {
+    width: 100%;
+    height: auto;
+  }
+  .fotoContainer {
+    height: 15rem;
+    width: 15rem;
   }
 }
