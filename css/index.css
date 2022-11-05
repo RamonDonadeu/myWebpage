@@ -27,21 +27,6 @@ a {
   --white: hsl(36, 100%, 99%);
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--color_one);
-}
-
 body {
   background-color: var(--color_two);
   color: var(--white);
@@ -80,6 +65,23 @@ h4 {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
+}
+
+@media (min-width: 750px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color_one);
+  }
 }
 
 /* ========================== HEADER CSS ========================== */
@@ -191,8 +193,9 @@ header {
   }
   .headerElement {
     justify-content: start;
-    margin-right: 7rem;
-    margin-bottom: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
   }
   .nav--closed {
     transition: 0.5s;
