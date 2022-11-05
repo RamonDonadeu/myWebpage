@@ -1,51 +1,60 @@
-.aboutme{   
-    box-sizing: border-box; 
-    height: calc(100vh - 4rem);
-    background-color: var(--color_one);
-    width: 100%;
-    padding-block: 3rem 3rem;
+.aboutme {
+  box-sizing: border-box;
+  min-height: calc(100vh - 4rem);
+  background-color: var(--color_one);
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
-.aboutme  span{
-    font-weight: bolder;
-    font-size: 1.6rem;
+.aboutme span {
+  font-weight: bolder;
+  font-size: 1.6rem;
 }
 
-.aboutme > .sectionContainer{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.aboutme > .sectionContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.aboutme--content{
-    font-size: 1.4rem;
-    max-width: 750px;
-    line-height: 2rem;
+.aboutme h2 {
+  font-size: 5rem;
+  margin: 1rem auto;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
 }
 
-
-.mainTech .logos{
-    display: flex;    
-    align-items: center;
-    justify-content: space-between;
+.aboutme--content {
+  font-size: 1.4rem;
+  max-width: 750px;
+  line-height: 2rem;
 }
 
-.mainTech .logos img{
-    aspect-ratio: 1/1;
-    height: 10rem;
+.mainTech .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.otherTech .logos{    
-    padding-top: 3rem;
-    display: flex;    
-    align-items: center;
-    justify-content: space-between;
-}
-.otherTech .logos img{
-    max-height: 4rem;
+.mainTech .logos img {
+  aspect-ratio: 1/1;
+  height: 10rem;
 }
 
-.first--letter{
-    font-size: 2.5rem !important; 
+.otherTech .logos {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.otherTech .logos img {
+  max-height: 4rem;
+}
+
+.first--letter {
+  font-size: 2.5rem !important;
 }

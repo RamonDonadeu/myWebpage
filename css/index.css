@@ -1,181 +1,199 @@
 /* GLOBAL */
 
-html {
-    font-family: Helvetica, serif;
+@font-face {
+  font-family: Megrim;
+  src: url("../fonts/Megrim-Regular.ttf");
 }
 
-a{
-    color: white;
-    text-decoration:none;
+@font-face {
+  font-family: Recursive;
+  src: url("../fonts/Recursive-Regular.ttf");
+}
+
+html,
+a,
+button {
+  font-family: Recursive, serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 :root {
-    --color_one: #DD4C4C;
-    --color_two: rgb(57, 62, 70);
-    --color_three: #00ADB5;
-    --white: hsl(36, 100%, 99%);;
+  --color_one: #a51a1a;
+  --color_two: rgb(57, 62, 70);
+  --color_three: #00adb5;
+  --white: hsl(36, 100%, 99%);
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--color_one);
-  }
-  
-
-body {
-    background-color: var(--color_two);
-    color: var(--white);
-    margin: 0 !important;
-    overflow-y: overlay;
-    scroll-behavior: smooth;
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color_one);
+}
+
+body {
+  background-color: var(--color_two);
+  color: var(--white);
+  margin: 0 !important;
+  overflow-y: overlay;
+  scroll-behavior: smooth;
+}
+h2 {
+  font-family: Megrim !important;
+  font-weight: bolder !important;
+}
 h4 {
-    font-weight: lighter;
-    margin: 0;
+  font-weight: lighter;
+  margin: 0;
 }
 
 .sectionContainer {
-    max-width: 1100px;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding-inline: 2rem;
+  box-sizing: border-box;
 }
 
-.sectionTitle{
-    font-size: 4rem;
-    font-weight: bold;
-    padding-bottom: 3rem;
-    margin: auto;
-    width: min-content;
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+  margin: auto;
+  width: min-content;
 }
 
-.mainContent{
-    height: calc(100vh - 4rem);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+.mainContent {
+  height: calc(100vh - 4rem);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* ========================== HEADER CSS ========================== */
 
 header {
-    background-color: var(--color_one);
-    color: var(--white);
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-inline: 2rem;
-    position: sticky;
-    top:0;
-    width: 100vw;
-    box-sizing: border-box;
-    z-index: 100;
+  background-color: var(--color_one);
+  color: var(--white);
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  z-index: 100;
 }
 
 .logo {
-    margin-block: auto;
-    font-size: 3rem;
-    font-weight: bold;
-    text-decoration: none;
+  margin-block: auto;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .headerContainer {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    align-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
 }
 
 .headerElement {
-    font-size: 1.3rem;
-    padding-inline: 1rem;
-    margin-left: 0.5rem;
-    position: relative;
-    display: inline-block;
-    padding-block: 0.3rem;
+  font-size: 1.3rem;
+  padding-inline: 1rem;
+  margin-left: 0.5rem;
+  position: relative;
+  display: inline-block;
+  padding-block: 0.3rem;
 }
-.headerElement a{
-    cursor: pointer;
+.headerElement a {
+  cursor: pointer;
+  font-family: Megrim, serif;
+  font-weight: bold;
 }
 
 .headerElement > a:after {
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--white);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: " ";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .headerElement > a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .headerContactMe {
-    font-size: 1.3rem;
-    margin-block: auto;
-    padding-inline: 1.2rem;
-    padding-block: 0.3rem;
-    border: 2px solid var(--white);
-    border-radius: 50px;
-    transition: 0.3s;
-    cursor: pointer;
+  font-size: 1.3rem;
+  margin-block: auto;
+  padding-inline: 1.2rem;
+  padding-block: 0.3rem;
+  border: 2px solid var(--white);
+  border-radius: 50px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .headerContactMe:hover {
-    background-color: var(--white);
-    color: var(--color_one)
+  background-color: var(--white);
+  color: var(--color_one);
 }
 
 .headerMargin {
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
-
 
 /* ===================== Footer ==================== */
-footer{
-    background-color: var(--color_one);
-    height: 15rem;
+footer {
+  background-color: var(--color_one);
+  height: 15rem;
 }
-footer > div{
-    display: flex;
-    flex-direction: row;
-}
-
-.footer--info{display: flex;
-flex-direction: row;
-justify-content: flex-start;
-font-size: 1.3rem;
-align-items: center;
-width: 50%;
+footer > div {
+  display: flex;
+  flex-direction: row;
 }
 
-.footer--links{
-    width: 50%;
-    display: flex;
-justify-content: flex-end;
-align-items: center;
-gap: 3rem}
-
-.footer--links a img{
-    height: 5rem;
+.footer--info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+  align-items: center;
+  width: 50%;
 }
 
+.footer--links {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer--links a img {
+  height: 5rem;
+}
