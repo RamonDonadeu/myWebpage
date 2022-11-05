@@ -1,6 +1,6 @@
 .aboutme {
   box-sizing: border-box;
-  min-height: calc(100vh - 4rem);
+  height: calc(100vh - 4rem);
   background-color: var(--color_one);
   width: 100%;
   padding-bottom: 2rem;
@@ -57,4 +57,31 @@
 
 .first--letter {
   font-size: 2.5rem !important;
+}
+@media (max-width: 950px) {
+  .aboutme {
+    padding-block: 2rem;
+  }
+
+  .aboutme--content {
+    text-align: center;
+  }
+
+  .mainTech {
+    padding-top: 4rem;
+  }
+
+  .mainTech img {
+    height: 5rem !important;
+    width: 5rem;
+  }
+
+  .otherTech img {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+
+  .otherTech {
+    padding-bottom: 2rem;
+  }
 }
