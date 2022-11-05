@@ -85,15 +85,17 @@
 
 @media (max-width: 950px) {
   .projects h2 {
+    font-size: 4rem;
+    text-align: center;
     padding-bottom: 2rem;
   }
   .projectList {
     flex-direction: column;
   }
   .project--item {
-    width: 60%;
     margin: auto;
     margin-bottom: 4rem;
+    width: 100%;
   }
   .imgContainer {
     flex-direction: column;

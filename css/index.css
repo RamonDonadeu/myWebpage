@@ -196,7 +196,7 @@ header {
   }
   .nav--closed {
     transition: 0.5s;
-    right: -50%;
+    right: -100%;
   }
   .nav--open {
     transition: 0.5s;
@@ -265,6 +265,7 @@ footer > div {
   .footer--info {
     text-align: center;
     justify-content: center;
+    font-size: 1rem;
   }
   .footer--links {
     justify-content: center;

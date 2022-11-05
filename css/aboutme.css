@@ -1,6 +1,6 @@
 .aboutme {
   box-sizing: border-box;
-  height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4rem);
   background-color: var(--color_one);
   width: 100%;
   padding-bottom: 2rem;
@@ -63,22 +63,40 @@
     padding-block: 2rem;
   }
 
+  .aboutme h2 {
+    font-size: 4rem;
+  }
+  .first--letter {
+    font-size: 1.2rem !important;
+  }
   .aboutme--content {
     text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: start;
+  }
+  .aboutme--content span {
+    font-size: 1.4rem;
   }
 
   .mainTech {
-    padding-top: 4rem;
+    padding-top: 2rem;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around !important;
   }
 
   .mainTech img {
-    height: 5rem !important;
-    width: 5rem;
+    height: 7rem !important;
+    width: 7rem;
   }
 
   .otherTech img {
-    height: 3rem !important;
-    width: 3rem !important;
+    height: 4rem !important;
+    width: 4rem !important;
   }
 
   .otherTech {

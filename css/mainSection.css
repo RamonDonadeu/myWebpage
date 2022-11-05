@@ -86,15 +86,16 @@
     padding-block: 2rem;
     text-align: center;
   }
-  .infoContainer a {
-    margin-top: 3rem;
-  }
   .fotoAvatar {
     width: 100%;
     height: auto;
   }
   .fotoContainer {
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .mainSection button {
+    margin: 0;
   }
 }
